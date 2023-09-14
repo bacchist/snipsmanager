@@ -1,5 +1,5 @@
 # Code Snippet Manager
-#### Video Demo:  <URL HERE>
+#### Video Demo:  https://youtu.be/mw1xEp2YZ3M
 #### Description:
 
 This application works with JSON files containing vscode format code snippets. It accepts 4 commands: show-all, show, edit, and new. The show-all command displays an index of the contents of the snippet file in a nicely formatted table. The show command displays the "body" or actual code of the snippet. The edit command allows you to edit the body of a single snippet without disturbing the rest of the file. And finally, the new command lets the user interactively write a new snippet and add it to a file.
