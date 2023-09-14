@@ -28,7 +28,7 @@ def test_show():
     assert result.exit_code == 0
     assert "just a string" in result.stdout
 
-
+# TODO: Write tests for user input
 def test_new(mocker):
     mock_run = mocker.patch("subprocess.call", return_value=0)
     result = runner.invoke(
@@ -44,6 +44,5 @@ def test_new(mocker):
 def test_edit(mocker):
     mock_run = mocker.patch("subprocess.call")
     result = runner.invoke(app, ["edit", "good_string_body.json", "str"])
-    assert result
     mock_run.assert_called_once_with(["nvim", ANY])
     assert result.exit_code == 0

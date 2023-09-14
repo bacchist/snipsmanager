@@ -126,6 +126,9 @@ def load_snippets(snippets_file):
     checked = {}
 
     # TODO: group these errors together into a panel and have the user acknowledge them before continuing
+    #
+    # TODO: Get user confirmation that this could result in lost data. Maybe back up the files. Maybe also
+    #       save partial entries to a file so they can be recovered.
     for snippet, details in snippets.items():
         if "prefix" not in details.keys():
             logger.warning(
